@@ -12,7 +12,7 @@ const fs = require('fs')
 
 /**
  * elasticdump --input=http://localhost:9200/filebeat --output=export.json --type=data --searchBody '{"query": { "match_all": {}}, "stored_fields": ["*"], "_source": false}' --limit 10000
- * node --max_old_space_size=400 node_modules/.bin/elasticdump --input=http://localhost:9200/filebeat --output=$ --type=data --searchBody '{"query": { "match_all": {}}, "stored_fields": ["*"], "_source": true}' --limit 100 | node --max_old_space_size=40 removeInfo.js  --infile=- --outfile=out.js --overwrite
+ * node node_modules/.bin/elasticdump --input=http://localhost:9200/filebeat --output=$ --type=data --searchBody '{"query": { "match_all": {}}, "stored_fields": ["*"], "_source": true}' --limit 100 | pv | node --max_old_space_size=140 removeInfo.js  --infile=- --outfile=data/out.js
  */
 
 const argv = require('minimist')(process.argv.slice(2));
