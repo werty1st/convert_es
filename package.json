@@ -1,0 +1,17 @@
+{
+  "name": "parsees",
+  "version": "1.0.0",
+  "description": "",
+  "main": "removeInfo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "event-stream": "^3.3.4",
+    "gauge": "^2.7.3",
+    "jsonwebtoken": "^7.3.0",
+    "minimist": "^1.2.0"
+  }
+}
